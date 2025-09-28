@@ -2,20 +2,24 @@
 #define DOGORITHM_H
 
 #include "ChatRoom.h"
-#include "User.h"
-#include "Message.h"
 
-class Dogorithm : public ChatRoom {
+class Dogorithm : public ChatRoom
+{
 public:
-    Dogorithm() : ChatRoom("Dogorithm") {}
+    Dogorithm(const std::string &roomName) : ChatRoom(roomName) {}
+    Dogorithm() : ChatRoom("Dogoritm") {}
+
     ~Dogorithm();
-    
-    void registerUser(User* user) override;
-    void removeUser(User* user) override;
-    void sendMessage(const std::string& content, User* fromUser) override;
-    void saveMessage(const std::string& content, User* fromUser) override;
-    
-    virtual Iterator<User*>* createUserIterator() = 0;
+
+    void registerUser(User *user) override;
+    void removeUser(User *user) override;
+    void sendMessage(const std::string &content, User *fromUser) override;
+    void saveMessage(const std::string &content, User *fromUser) override;
+
+    // CHANGE THIS IN THE DIAGRAM YOU MADE IT ABSTRACT
+    // BUT NOTHING INHERITES FROM THIS CLASS 👁️👄👁️
+    // ALSO YOU HAVE WAY TO MANY ITERATORS BRUHH😭😭
+    virtual Iterator<User *> *createUserIterator() override;
 };
 
 #endif

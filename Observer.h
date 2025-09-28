@@ -7,6 +7,7 @@
 class Observer {
 public:
     virtual ~Observer() {}
+    
     virtual void update(const std::string& event, const std::string& data) = 0;
 };
 

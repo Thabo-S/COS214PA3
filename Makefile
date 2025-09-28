@@ -3,7 +3,7 @@ CXXFLAGS = -std=c++11 -Wall
 
 TARGET = TestingMain
 
-OBJS = TestingMain.o User.o Subject.o ChatRoom.o CtrlCat.o Dogorithm.o SendMessageCommand.o SaveMessageCommand.o UserIterator.o MessageObserver.o Name1.o Name2.o Name3.o
+OBJS = TestingMain.o User.o Subject.o ChatRoom.o CtrlCat.o Dogorithm.o SendMessageCommand.o SaveMessageCommand.o UserIterator.o Message.o MessageObserver.o AdminObserver.o
 
 $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
@@ -13,6 +13,9 @@ TestingMain.o: TestingMain.cpp
 
 User.o: User.cpp
 	$(CXX) $(CXXFLAGS) -c User.cpp -o User.o
+
+Message.o: Message.cpp
+	$(CXX) $(CXXFLAGS) -c Message.cpp -o Message.o
 
 Subject.o: Subject.cpp
 	$(CXX) $(CXXFLAGS) -c Subject.cpp -o Subject.o
@@ -36,16 +39,10 @@ UserIterator.o: UserIterator.cpp
 	$(CXX) $(CXXFLAGS) -c UserIterator.cpp -o UserIterator.o
 
 MessageObserver.o: MessageObserver.cpp
-	$(CXX) $(CXXFLAGS) -c MessageObserver.cpp -o MessageObserver.o
+	$(CXX) $(CXXFLAGS) -c MessageObserver.cpp
 
-Name1.o: Name1.cpp
-	$(CXX) $(CXXFLAGS) -c Name1.cpp -o Name1.o
-
-Name2.o: Name2.cpp
-	$(CXX) $(CXXFLAGS) -c Name2.cpp -o Name2.o
-
-Name3.o: Name3.cpp
-	$(CXX) $(CXXFLAGS) -c Name3.cpp -o Name3.o
+AdminObserver.o: AdminObserver.cpp
+	$(CXX) $(CXXFLAGS) -c AdminObserver.cpp
 
 run: $(TARGET)
 	./$(TARGET)

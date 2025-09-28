@@ -18,11 +18,11 @@ public:
     // Getters
     std::string getContent() const { return content; }
     User* getSender() const { return sender; }
-    std::string getTimestamp() const;
+    // std::string getTimestamp() const;
     std::string getRoomName() const { return roomName; }
     
     // Utility methods
-    bool contains(const std::string& keyword) const;
+    // bool contains(const std::string& keyword) const;
     std::string toString() const;
 };
 
