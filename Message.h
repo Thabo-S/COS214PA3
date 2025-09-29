@@ -4,6 +4,15 @@
 #include <string>
 #include "User.h"
 
+/**
+ * @class Message
+ * @brief Represents a chat message with content and metadata.
+ * 
+ * Encapsulates message data including content, sender, and room context.
+ * @author Thabo Seripe, Njabulo Nhlengethwa
+ * @date 25-09-2025
+ */
+
 
 class Message {
 private:

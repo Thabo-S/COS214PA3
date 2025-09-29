@@ -39,10 +39,10 @@ UserIterator.o: UserIterator.cpp
 	$(CXX) $(CXXFLAGS) -c UserIterator.cpp -o UserIterator.o
 
 MessageObserver.o: MessageObserver.cpp
-	$(CXX) $(CXXFLAGS) -c MessageObserver.cpp
+	$(CXX) $(CXXFLAGS) -c MessageObserver.cpp -o MessageObserver.o
 
 AdminObserver.o: AdminObserver.cpp
-	$(CXX) $(CXXFLAGS) -c AdminObserver.cpp
+	$(CXX) $(CXXFLAGS) -c AdminObserver.cpp -o AdminObserver.o
 
 run: $(TARGET)
 	./$(TARGET)
@@ -50,11 +50,9 @@ run: $(TARGET)
 valgrind: $(TARGET)
 	valgrind --leak-check=full --track-origins=yes ./$(TARGET)
 
-coverage: $(TARGET)
-	$(CXX) $(CXXFLAGS) --coverage -o coverage $(filter %.cpp, $(wildcard *.cpp))
-	./coverage
-	gcov $(filter %.cpp, $(wildcard *.cpp))
-	@rm -f *.gcda *.gcno
+docs:
+	doxygen Doxyfile
 
 clean:
-	rm -f $(OBJS) $(TARGET) coverage *.gcov
+	rm -f $(OBJS) $(TARGET)
+	rm -rf docs

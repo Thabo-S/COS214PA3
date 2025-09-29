@@ -1,0 +1,66 @@
+\hypertarget{classUserIterator}{}\doxysection{User\+Iterator Class Reference}
+\label{classUserIterator}\index{UserIterator@{UserIterator}}
+
+
+Concrete iterator for traversing user collections.  
+
+
+
+
+{\ttfamily \#include $<$User\+Iterator.\+h$>$}
+
+
+
+Inheritance diagram for User\+Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classUserIterator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for User\+Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classUserIterator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUserIterator_a83018d22cbb1065fba34ee162eac2aca}\label{classUserIterator_a83018d22cbb1065fba34ee162eac2aca}} 
+{\bfseries User\+Iterator} (const std\+::vector$<$ \mbox{\hyperlink{classUser}{User}} $\ast$ $>$ \&user\+List)
+\item 
+\mbox{\Hypertarget{classUserIterator_a3d590b9efd236beee1c34b9155f95dd2}\label{classUserIterator_a3d590b9efd236beee1c34b9155f95dd2}} 
+void {\bfseries first} () override
+\item 
+\mbox{\Hypertarget{classUserIterator_a4668830d3ef5709b927bc88e7243bdf2}\label{classUserIterator_a4668830d3ef5709b927bc88e7243bdf2}} 
+void {\bfseries next} () override
+\item 
+\mbox{\Hypertarget{classUserIterator_a88df7a99b5a17e4741afccf21b25b61c}\label{classUserIterator_a88df7a99b5a17e4741afccf21b25b61c}} 
+bool {\bfseries is\+Done} () const override
+\item 
+\mbox{\Hypertarget{classUserIterator_ad050a3c985dedb8d855acca92a36a2a6}\label{classUserIterator_ad050a3c985dedb8d855acca92a36a2a6}} 
+\mbox{\hyperlink{classUser}{User}} $\ast$ {\bfseries current\+Item} () const override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete iterator for traversing user collections. 
+
+Implements iterator pattern for sequential access to collections of \mbox{\hyperlink{classUser}{User}} objects. \begin{DoxyAuthor}{Author}
+Thabo Seripe, Njabulo Nhlengethwa 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25-\/09-\/2025 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+User\+Iterator.\+h\item 
+User\+Iterator.\+cpp\end{DoxyCompactItemize}

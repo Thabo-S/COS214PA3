@@ -1,0 +1,70 @@
+\hypertarget{classCtrlCat}{}\doxysection{Ctrl\+Cat Class Reference}
+\label{classCtrlCat}\index{CtrlCat@{CtrlCat}}
+
+
+Concrete mediator for \mbox{\hyperlink{classCtrlCat}{Ctrl\+Cat}} room.  
+
+
+
+
+{\ttfamily \#include $<$Ctrl\+Cat.\+h$>$}
+
+
+
+Inheritance diagram for Ctrl\+Cat\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classCtrlCat__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ctrl\+Cat\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classCtrlCat__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCtrlCat_a978d81591a73886d4c7f54b25fe3273b}\label{classCtrlCat_a978d81591a73886d4c7f54b25fe3273b}} 
+{\bfseries Ctrl\+Cat} (const std\+::string \&room\+Name)
+\item 
+\mbox{\Hypertarget{classCtrlCat_a43428ea63ace414c9d846b55646e621b}\label{classCtrlCat_a43428ea63ace414c9d846b55646e621b}} 
+void {\bfseries register\+User} (\mbox{\hyperlink{classUser}{User}} $\ast$user) override
+\item 
+\mbox{\Hypertarget{classCtrlCat_a061a5c44a8d8984ed1b39c24caa2ee10}\label{classCtrlCat_a061a5c44a8d8984ed1b39c24caa2ee10}} 
+void {\bfseries remove\+User} (\mbox{\hyperlink{classUser}{User}} $\ast$user) override
+\item 
+\mbox{\Hypertarget{classCtrlCat_a936a000d376c5e91c7bc20a54067c622}\label{classCtrlCat_a936a000d376c5e91c7bc20a54067c622}} 
+void {\bfseries send\+Message} (const std\+::string \&content, \mbox{\hyperlink{classUser}{User}} $\ast$from\+User) override
+\item 
+\mbox{\Hypertarget{classCtrlCat_a7960b9b469c36a18a652fb5b8e7845f2}\label{classCtrlCat_a7960b9b469c36a18a652fb5b8e7845f2}} 
+void {\bfseries save\+Message} (const std\+::string \&content, \mbox{\hyperlink{classUser}{User}} $\ast$from\+User) override
+\item 
+\mbox{\Hypertarget{classCtrlCat_a2ce3d7b8b74a929bbcfd20f8a23d0a58}\label{classCtrlCat_a2ce3d7b8b74a929bbcfd20f8a23d0a58}} 
+virtual \mbox{\hyperlink{classIterator}{Iterator}}$<$ \mbox{\hyperlink{classUser}{User}} $\ast$ $>$ $\ast$ {\bfseries create\+User\+Iterator} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete mediator for \mbox{\hyperlink{classCtrlCat}{Ctrl\+Cat}} room. 
+
+\begin{DoxyAuthor}{Author}
+Your Name 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25-\/09-\/2025 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Ctrl\+Cat.\+h\item 
+Ctrl\+Cat.\+cpp\end{DoxyCompactItemize}

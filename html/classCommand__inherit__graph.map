@@ -1,0 +1,5 @@
+<map id="Command" name="Command">
+<area shape="rect" id="node1" title="Abstract command for actions (Command pattern)." alt="" coords="151,5,241,32"/>
+<area shape="rect" id="node2" href="$classSaveMessageCommand.html" title="Command for saving messages to chat history." alt="" coords="5,80,184,107"/>
+<area shape="rect" id="node3" href="$classSendMessageCommand.html" title="Command for sending messages to chat room users." alt="" coords="208,80,387,107"/>
+</map>

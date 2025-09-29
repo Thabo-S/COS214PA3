@@ -1,0 +1,59 @@
+\hypertarget{classSubject}{}\doxysection{Subject Class Reference}
+\label{classSubject}\index{Subject@{Subject}}
+
+
+Abstract subject interface (\mbox{\hyperlink{classObserver}{Observer}} pattern).  
+
+
+
+
+{\ttfamily \#include $<$Subject.\+h$>$}
+
+
+
+Inheritance diagram for Subject\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classSubject__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSubject_a0884bfe374d352c6488a1e40c84246c8}\label{classSubject_a0884bfe374d352c6488a1e40c84246c8}} 
+void {\bfseries attach} (\mbox{\hyperlink{classObserver}{Observer}} $\ast$observer)
+\item 
+\mbox{\Hypertarget{classSubject_a752a7596d52ab986539232f8377ca92c}\label{classSubject_a752a7596d52ab986539232f8377ca92c}} 
+void {\bfseries detach} (\mbox{\hyperlink{classObserver}{Observer}} $\ast$observer)
+\item 
+\mbox{\Hypertarget{classSubject_a897a41087446b6d6de2f76085588ff23}\label{classSubject_a897a41087446b6d6de2f76085588ff23}} 
+virtual void {\bfseries notify\+Observers} (const std\+::string \&event, \mbox{\hyperlink{classMessage}{Message}} msg)
+\item 
+\mbox{\Hypertarget{classSubject_af551a9bf1e8445a2d4ff3f2db99a92d5}\label{classSubject_af551a9bf1e8445a2d4ff3f2db99a92d5}} 
+void {\bfseries clear\+Observers} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSubject_ac55e8afa4f70788ead15a2eae70b5696}\label{classSubject_ac55e8afa4f70788ead15a2eae70b5696}} 
+std\+::vector$<$ \mbox{\hyperlink{classObserver}{Observer}} $\ast$ $>$ {\bfseries observers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract subject interface (\mbox{\hyperlink{classObserver}{Observer}} pattern). 
+
+Manages observer registration and notification for objects that need to notify observers of state changes. \begin{DoxyAuthor}{Author}
+Thabo Seripe, Njabulo Nhlengethwa 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25-\/09-\/2025 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Subject.\+h\item 
+Subject.\+cpp\end{DoxyCompactItemize}

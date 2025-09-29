@@ -1,0 +1,4 @@
+<map id="AdminObserver" name="AdminObserver">
+<area shape="rect" id="node1" title="Observer implementation for administrative notifications." alt="" coords="5,80,128,107"/>
+<area shape="rect" id="node2" href="$classObserver.html" title="Abstract observer interface (Observer pattern)." alt="" coords="26,5,107,32"/>
+</map>

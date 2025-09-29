@@ -1,0 +1,85 @@
+\hypertarget{classUser}{}\doxysection{User Class Reference}
+\label{classUser}\index{User@{User}}
+
+
+Represents a user in the Pet\+Space system (Colleague in Mediator, Invoker in \mbox{\hyperlink{classCommand}{Command}}).  
+
+
+
+
+{\ttfamily \#include $<$User.\+h$>$}
+
+
+
+Inheritance diagram for User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classUser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{classUser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUser_aa07d4a3ff7450c7e7ab0ceee7d463fb6}\label{classUser_aa07d4a3ff7450c7e7ab0ceee7d463fb6}} 
+{\bfseries User} (const std\+::string \&user\+Name)
+\item 
+\mbox{\Hypertarget{classUser_a29905ad2795dd1e674042d657839c9c7}\label{classUser_a29905ad2795dd1e674042d657839c9c7}} 
+void {\bfseries send\+Message} (const std\+::string \&message, \mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$room)
+\item 
+\mbox{\Hypertarget{classUser_acc62ca44c93906fb99470b9496bb23e5}\label{classUser_acc62ca44c93906fb99470b9496bb23e5}} 
+void {\bfseries receive\+Message} (const std\+::string \&message, \mbox{\hyperlink{classUser}{User}} $\ast$from\+User, \mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$room)
+\item 
+\mbox{\Hypertarget{classUser_a40b0f3772906a022151037db5aaea30f}\label{classUser_a40b0f3772906a022151037db5aaea30f}} 
+void {\bfseries add\+Command} (\mbox{\hyperlink{classCommand}{Command}} $\ast$command)
+\item 
+\mbox{\Hypertarget{classUser_a55634b63429cc51f0bb102c08981ae86}\label{classUser_a55634b63429cc51f0bb102c08981ae86}} 
+void {\bfseries execute\+Commands} ()
+\item 
+\mbox{\Hypertarget{classUser_a884c0841b76a96c33383d2166e0207ad}\label{classUser_a884c0841b76a96c33383d2166e0207ad}} 
+void {\bfseries join\+Room} (\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$room)
+\item 
+\mbox{\Hypertarget{classUser_aeff3ae2cbf7464d007c2e1537dde9eb9}\label{classUser_aeff3ae2cbf7464d007c2e1537dde9eb9}} 
+void {\bfseries leave\+Room} (\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$room)
+\item 
+\mbox{\Hypertarget{classUser_a446a64e63adafbc2e1428532275ad6a1}\label{classUser_a446a64e63adafbc2e1428532275ad6a1}} 
+std\+::string {\bfseries get\+Name} () const
+\item 
+\mbox{\Hypertarget{classUser_a64ed3e1327097ea71390eced2a977289}\label{classUser_a64ed3e1327097ea71390eced2a977289}} 
+const std\+::vector$<$ \mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$ $>$ \& {\bfseries get\+Chat\+Rooms} () const
+\item 
+\mbox{\Hypertarget{classUser_a665824b4eefc95c8e6a5c99948c3e1e5}\label{classUser_a665824b4eefc95c8e6a5c99948c3e1e5}} 
+void {\bfseries notify\+Observers} (const std\+::string \&event, \mbox{\hyperlink{classMessage}{Message}} msg) override
+\item 
+\mbox{\Hypertarget{classUser_adc20e0824a5297624b683760577c34ff}\label{classUser_adc20e0824a5297624b683760577c34ff}} 
+void {\bfseries clear\+Commands} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a user in the Pet\+Space system (Colleague in Mediator, Invoker in \mbox{\hyperlink{classCommand}{Command}}). 
+
+Users can join chat rooms, send/receive messages via commands, and act as subjects for observers. \begin{DoxyAuthor}{Author}
+Thabo Seripe, Njabulo Nhlengethwa 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25-\/09-\/2025 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+User.\+h\item 
+User.\+cpp\end{DoxyCompactItemize}

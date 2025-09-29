@@ -1,0 +1,4 @@
+<map id="Subject" name="Subject">
+<area shape="rect" id="node1" title="Abstract subject interface (Observer pattern)." alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node2" href="$classUser.html" title="Represents a user in the PetSpace system (Colleague in Mediator, Invoker in Command)." alt="" coords="15,80,67,107"/>
+</map>

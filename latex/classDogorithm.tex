@@ -1,0 +1,70 @@
+\hypertarget{classDogorithm}{}\doxysection{Dogorithm Class Reference}
+\label{classDogorithm}\index{Dogorithm@{Dogorithm}}
+
+
+Concrete mediator for \mbox{\hyperlink{classDogorithm}{Dogorithm}} chat room.  
+
+
+
+
+{\ttfamily \#include $<$Dogorithm.\+h$>$}
+
+
+
+Inheritance diagram for Dogorithm\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classDogorithm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dogorithm\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classDogorithm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDogorithm_ae97984f84bd70776d52a898403622632}\label{classDogorithm_ae97984f84bd70776d52a898403622632}} 
+{\bfseries Dogorithm} (const std\+::string \&room\+Name)
+\item 
+\mbox{\Hypertarget{classDogorithm_af32650fc62212dd15e07cfef5ba4f8ef}\label{classDogorithm_af32650fc62212dd15e07cfef5ba4f8ef}} 
+void {\bfseries register\+User} (\mbox{\hyperlink{classUser}{User}} $\ast$user) override
+\item 
+\mbox{\Hypertarget{classDogorithm_acb225404e4e8942b8d3e32d4b8dfa287}\label{classDogorithm_acb225404e4e8942b8d3e32d4b8dfa287}} 
+void {\bfseries remove\+User} (\mbox{\hyperlink{classUser}{User}} $\ast$user) override
+\item 
+\mbox{\Hypertarget{classDogorithm_a6c2967d6439f4640a44fa8177a81c5b9}\label{classDogorithm_a6c2967d6439f4640a44fa8177a81c5b9}} 
+void {\bfseries send\+Message} (const std\+::string \&content, \mbox{\hyperlink{classUser}{User}} $\ast$from\+User) override
+\item 
+\mbox{\Hypertarget{classDogorithm_a859afba5ad6adceae7ccb8c8902ed5a9}\label{classDogorithm_a859afba5ad6adceae7ccb8c8902ed5a9}} 
+void {\bfseries save\+Message} (const std\+::string \&content, \mbox{\hyperlink{classUser}{User}} $\ast$from\+User) override
+\item 
+\mbox{\Hypertarget{classDogorithm_a0f83c808cd1052e0194f8fb9fa01e378}\label{classDogorithm_a0f83c808cd1052e0194f8fb9fa01e378}} 
+virtual \mbox{\hyperlink{classIterator}{Iterator}}$<$ \mbox{\hyperlink{classUser}{User}} $\ast$ $>$ $\ast$ {\bfseries create\+User\+Iterator} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete mediator for \mbox{\hyperlink{classDogorithm}{Dogorithm}} chat room. 
+
+Implements specific behavior for the \mbox{\hyperlink{classDogorithm}{Dogorithm}} chat room including user management and message handling. \begin{DoxyAuthor}{Author}
+Thabo Seripe, Njabulo Nhlengethwa 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25-\/09-\/2025 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dogorithm.\+h\item 
+Dogorithm.\+cpp\end{DoxyCompactItemize}

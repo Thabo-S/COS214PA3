@@ -3,13 +3,23 @@
 
 #include "Observer.h"
 
+/**
+ * @class Subject
+ * @brief Abstract subject interface (Observer pattern).
+ * 
+ * Manages observer registration and notification for
+ * objects that need to notify observers of state changes.
+ * @author Thabo Seripe, Njabulo Nhlengethwa
+ * @date 25-09-2025
+ */
+
 class Message;
 
 class Subject
 {
-private:
+
 public:
-    // YOU HAD THE MADE THE OBSERVER LIST PUBLIC BRUH
+
     std::vector<Observer *> observers;
 
     virtual ~Subject();
@@ -17,8 +27,6 @@ public:
     void attach(Observer *observer);
     void detach(Observer *observer);
 
-    // ALSO CHANGE THE NOTIFY TO RECIEVE A MASSEGE OBJECT
-    // INSTEAD OF THE STRING 👁️👄👁️
     virtual void notifyObservers(const std::string &event, Message msg);
 
     void clearObservers();

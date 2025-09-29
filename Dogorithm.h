@@ -3,6 +3,16 @@
 
 #include "ChatRoom.h"
 
+/**
+ * @class Dogorithm
+ * @brief Concrete mediator for Dogorithm chat room.
+ * 
+ * Implements specific behavior for the Dogorithm chat room
+ * including user management and message handling.
+ * @author Thabo Seripe, Njabulo Nhlengethwa
+ * @date 25-09-2025
+ */
+
 class Dogorithm : public ChatRoom
 {
 public:
@@ -16,9 +26,6 @@ public:
     void sendMessage(const std::string &content, User *fromUser) override;
     void saveMessage(const std::string &content, User *fromUser) override;
 
-    // CHANGE THIS IN THE DIAGRAM YOU MADE IT ABSTRACT
-    // BUT NOTHING INHERITES FROM THIS CLASS 👁️👄👁️
-    // ALSO YOU HAVE WAY TO MANY ITERATORS BRUHH😭😭
     virtual Iterator<User *> *createUserIterator() override;
 };
 

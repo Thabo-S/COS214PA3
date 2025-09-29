@@ -1,0 +1,83 @@
+\hypertarget{classChatRoom}{}\doxysection{Chat\+Room Class Reference}
+\label{classChatRoom}\index{ChatRoom@{ChatRoom}}
+
+
+Abstract mediator for chat rooms (Mediator pattern).  
+
+
+
+
+{\ttfamily \#include $<$Chat\+Room.\+h$>$}
+
+
+
+Inheritance diagram for Chat\+Room\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classChatRoom__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classChatRoom_a83fe27fd98b83eee2cefba80b1237753}\label{classChatRoom_a83fe27fd98b83eee2cefba80b1237753}} 
+{\bfseries Chat\+Room} (const std\+::string \&name)
+\item 
+\mbox{\Hypertarget{classChatRoom_ad7d4fe63622992ee74913a0c04c1b840}\label{classChatRoom_ad7d4fe63622992ee74913a0c04c1b840}} 
+virtual void {\bfseries register\+User} (\mbox{\hyperlink{classUser}{User}} $\ast$user)=0
+\item 
+\mbox{\Hypertarget{classChatRoom_a01c7ea1d26aefc886c0f8b2bc63ade28}\label{classChatRoom_a01c7ea1d26aefc886c0f8b2bc63ade28}} 
+virtual void {\bfseries remove\+User} (\mbox{\hyperlink{classUser}{User}} $\ast$user)=0
+\item 
+\mbox{\Hypertarget{classChatRoom_ac7ca032fa613fb9da19565ecbbf8075c}\label{classChatRoom_ac7ca032fa613fb9da19565ecbbf8075c}} 
+virtual void {\bfseries send\+Message} (const std\+::string \&content, \mbox{\hyperlink{classUser}{User}} $\ast$from\+User)=0
+\item 
+\mbox{\Hypertarget{classChatRoom_a97ffea8c4d994fc1924d4be448aed941}\label{classChatRoom_a97ffea8c4d994fc1924d4be448aed941}} 
+virtual void {\bfseries save\+Message} (const std\+::string \&content, \mbox{\hyperlink{classUser}{User}} $\ast$from\+User)=0
+\item 
+\mbox{\Hypertarget{classChatRoom_aa2b4c210390034bd638497f28b51b778}\label{classChatRoom_aa2b4c210390034bd638497f28b51b778}} 
+virtual \mbox{\hyperlink{classIterator}{Iterator}}$<$ \mbox{\hyperlink{classUser}{User}} $\ast$ $>$ $\ast$ {\bfseries create\+User\+Iterator} ()=0
+\item 
+\mbox{\Hypertarget{classChatRoom_a8e1f3b4f5ebc9ee213d10996f1caf105}\label{classChatRoom_a8e1f3b4f5ebc9ee213d10996f1caf105}} 
+std\+::string {\bfseries get\+Name} () const
+\item 
+\mbox{\Hypertarget{classChatRoom_ae291288c549858e7e7fd8bcf47504476}\label{classChatRoom_ae291288c549858e7e7fd8bcf47504476}} 
+virtual void {\bfseries clear\+Users} ()
+\item 
+\mbox{\Hypertarget{classChatRoom_a7ff1aaf7dd18c6f0b895cfae4ae5a404}\label{classChatRoom_a7ff1aaf7dd18c6f0b895cfae4ae5a404}} 
+virtual void {\bfseries clear\+Messages} ()
+\item 
+\mbox{\Hypertarget{classChatRoom_ad5b6666559f129e48675da0580d4ead4}\label{classChatRoom_ad5b6666559f129e48675da0580d4ead4}} 
+virtual void {\bfseries print\+All\+Messages} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classChatRoom_ace7871822e81e2c0bf0c65dfd3bebc31}\label{classChatRoom_ace7871822e81e2c0bf0c65dfd3bebc31}} 
+std\+::vector$<$ \mbox{\hyperlink{classUser}{User}} $\ast$ $>$ {\bfseries users}
+\item 
+\mbox{\Hypertarget{classChatRoom_af143cd0380276df4e476a83d33948454}\label{classChatRoom_af143cd0380276df4e476a83d33948454}} 
+std\+::vector$<$ \mbox{\hyperlink{classMessage}{Message}} $\ast$ $>$ {\bfseries chat\+History}
+\item 
+\mbox{\Hypertarget{classChatRoom_a4e1951fe5721d93de976817ac55f00d3}\label{classChatRoom_a4e1951fe5721d93de976817ac55f00d3}} 
+std\+::string {\bfseries room\+Name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract mediator for chat rooms (Mediator pattern). 
+
+Manages users and message delivery/history. \begin{DoxyAuthor}{Author}
+Thabo Seripe, Njabulo Nhlengethwa 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25-\/09-\/2025 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Chat\+Room.\+h\item 
+Chat\+Room.\+cpp\end{DoxyCompactItemize}

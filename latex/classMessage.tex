@@ -1,0 +1,46 @@
+\hypertarget{classMessage}{}\doxysection{Message Class Reference}
+\label{classMessage}\index{Message@{Message}}
+
+
+Represents a chat message with content and metadata.  
+
+
+
+
+{\ttfamily \#include $<$Message.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMessage_a0f396134f69cfdd94d75fd8daaa6db1b}\label{classMessage_a0f396134f69cfdd94d75fd8daaa6db1b}} 
+{\bfseries Message} (const std\+::string \&msg\+Content, \mbox{\hyperlink{classUser}{User}} $\ast$msg\+Sender, const std\+::string \&room)
+\item 
+\mbox{\Hypertarget{classMessage_af19d1014c08d2197eacbc827e5053177}\label{classMessage_af19d1014c08d2197eacbc827e5053177}} 
+std\+::string {\bfseries get\+Content} () const
+\item 
+\mbox{\Hypertarget{classMessage_acfc1bdf75b80e6ba377936d1c260a67b}\label{classMessage_acfc1bdf75b80e6ba377936d1c260a67b}} 
+\mbox{\hyperlink{classUser}{User}} $\ast$ {\bfseries get\+Sender} () const
+\item 
+\mbox{\Hypertarget{classMessage_a922a1bec23a335e2834004cd01e99d0d}\label{classMessage_a922a1bec23a335e2834004cd01e99d0d}} 
+std\+::string {\bfseries get\+Room\+Name} () const
+\item 
+\mbox{\Hypertarget{classMessage_a10bea40e0b83887335eaaf45b6cfd32c}\label{classMessage_a10bea40e0b83887335eaaf45b6cfd32c}} 
+std\+::string {\bfseries to\+String} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a chat message with content and metadata. 
+
+Encapsulates message data including content, sender, and room context. \begin{DoxyAuthor}{Author}
+Thabo Seripe, Njabulo Nhlengethwa 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25-\/09-\/2025 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Message.\+h\item 
+Message.\+cpp\end{DoxyCompactItemize}

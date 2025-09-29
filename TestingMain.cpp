@@ -168,6 +168,6 @@ void testIteratorPattern()
     delete room;
 }
 
-// make coverage
+// make docs
 // make run
 // make valgrind

@@ -1,0 +1,77 @@
+\hypertarget{classCommand}{}\doxysection{Command Class Reference}
+\label{classCommand}\index{Command@{Command}}
+
+
+Abstract command for actions (\mbox{\hyperlink{classCommand}{Command}} pattern).  
+
+
+
+
+{\ttfamily \#include $<$Command.\+h$>$}
+
+
+
+Inheritance diagram for Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCommand__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classCommand__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCommand_aea62c488b914842c63b67ef593dade27}\label{classCommand_aea62c488b914842c63b67ef593dade27}} 
+{\bfseries Command} (\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$room, \mbox{\hyperlink{classUser}{User}} $\ast$user, const std\+::string \&msg)
+\item 
+\mbox{\Hypertarget{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}\label{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}} 
+virtual void {\bfseries execute} ()=0
+\item 
+\mbox{\Hypertarget{classCommand_aa55cad5771d3ce67bef3210504659bd7}\label{classCommand_aa55cad5771d3ce67bef3210504659bd7}} 
+\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$ {\bfseries get\+Chat\+Room} () const
+\item 
+\mbox{\Hypertarget{classCommand_afd84afe479c422d19c34c6780df4a0e6}\label{classCommand_afd84afe479c422d19c34c6780df4a0e6}} 
+\mbox{\hyperlink{classUser}{User}} $\ast$ {\bfseries get\+User} () const
+\item 
+\mbox{\Hypertarget{classCommand_a30003a6eb9afea6ed31e78470499dd07}\label{classCommand_a30003a6eb9afea6ed31e78470499dd07}} 
+std\+::string {\bfseries get\+Message} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCommand_a0e2628b5acc0a121147827396db2d6f1}\label{classCommand_a0e2628b5acc0a121147827396db2d6f1}} 
+\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$ {\bfseries chat\+Room}
+\item 
+\mbox{\Hypertarget{classCommand_a9f5fb38008fd35b7dbb1ecb1b82b322a}\label{classCommand_a9f5fb38008fd35b7dbb1ecb1b82b322a}} 
+\mbox{\hyperlink{classUser}{User}} $\ast$ {\bfseries from\+User}
+\item 
+\mbox{\Hypertarget{classCommand_aefb89941a5b2b0b0648cf7b98bb37762}\label{classCommand_aefb89941a5b2b0b0648cf7b98bb37762}} 
+std\+::string {\bfseries message}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract command for actions (\mbox{\hyperlink{classCommand}{Command}} pattern). 
+
+\begin{DoxyAuthor}{Author}
+Your Name 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25-\/09-\/2025 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Command.\+h\end{DoxyCompactItemize}

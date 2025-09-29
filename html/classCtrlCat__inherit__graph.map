@@ -1,0 +1,4 @@
+<map id="CtrlCat" name="CtrlCat">
+<area shape="rect" id="node1" title="Concrete mediator for CtrlCat room." alt="" coords="17,80,84,107"/>
+<area shape="rect" id="node2" href="$classChatRoom.html" title="Abstract mediator for chat rooms (Mediator pattern)." alt="" coords="5,5,96,32"/>
+</map>
